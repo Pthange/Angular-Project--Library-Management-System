@@ -43,7 +43,16 @@
                       <input type="text" class="form-control" id="email" 
                       [(ngModel)] = "student. studMobno" name="email">
                       </div>
-      <br>
+                      <br>
+                     <div class="form-group">
+                        <strong><label>Username:</label></strong><br>
+                        <input type="text" class="form-control" id="username" [(ngModel)]="student.username" name="username">
+                      </div><br>
+                  
+                      <div class="form-group">
+                        <strong><label>Password:</label></strong><br>
+                        <input type="password" class="form-control" id="password" [(ngModel)]="student.password" name="password">
+                      </div><br>
       <style>
         .button-submit,
   .button-back {
