@@ -1,0 +1,42 @@
+<strong class="large-text"><p>Edit Author</p></strong>
+<div class="col-md-6 offset-md-3">
+
+  <form (ngSubmit)="onSubmit()">
+     <div class="form-group">
+      <strong><label>Author ID:</label></strong><br>
+      <input type="text" class="form-control" id="id" 
+             [(ngModel)]="author.id" name="id">
+    </div><br> 
+    <div class="form-group">
+      <strong><label>Author Name:</label></strong><br>
+      <input type="text" class="form-control" id="authorName" 
+             [(ngModel)]="author.authorName" name="authorName">
+    </div><br>
+    
+    <div class="form-group">
+      <strong><label>Book Title:</label></strong><br>
+      <input type="text" class="form-control" id="booktitle" 
+             [(ngModel)]="author.booktitle" name="booktitle">
+    </div><br>
+    
+    <div class="form-group">
+      <strong><label>Gender:</label></strong><br>
+      <input type="text" class="form-control" id="authorGender" 
+             [(ngModel)]="author.authorGender" name="authorGender">
+    </div><br>
+    
+    <style>
+      .button-submit,
+      .button-back {
+        border-radius: 20px; /* Adjust the value to control the oval shape */
+        padding: 10px 20px; /* Adjust padding for button size */
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    </style>
+    
+    <button class="btn btn-success button-submit" type="submit">Submit</button>
+    <span style="margin-right: 10px;"></span>
+    <button type="button" class="btn btn-danger button-back" (click)="goBack()">Back</button>
+  </form>
+</div>

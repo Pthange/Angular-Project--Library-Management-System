@@ -1,0 +1,68 @@
+<style>
+  table {
+    margin-top: 20px;
+  }
+
+  th {
+    padding: 15px;
+    text-align: left;
+  }
+
+  td {
+    padding: 10px;
+  }
+
+  .btn-info,
+  .btn-danger,
+  .button-back {
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+</style>
+
+<strong class="large-text"><p>Book Transaction List :</p></strong>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Id:</th>
+      <th>Name:</th>
+      <th>Book Title:</th>
+      <th>Borrow Date:</th>
+      <th>Due Date:</th>
+      <th>Return Date:</th>
+      <th>Total Fine:</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transaction of transactions; let i = index">
+      <td>{{ transaction.id }}</td>
+      <td>{{ transaction.name }}</td>
+      <td>{{ transaction.booktitle }}</td>
+      <td>{{ transaction.borrowDate }}</td>
+      <td>{{ transaction.dueDate }}</td>
+      <td>{{ transaction.returnDate }}</td>
+      <td>{{ transaction.totalfine }}</td>
+      <td>
+        <button (click)="updateTransaction(transaction.id)" class="btn btn-info">
+          Update
+        </button>
+      </td>
+      <td>
+        <button (click)="deleteTransaction(transaction.id)" class="btn btn-danger">
+          Delete
+        </button>
+        
+        <!-- Display success message after deletion -->
+<div *ngIf="deleteSuccess" class="delete-success-msg">
+  Deleted successfully!
+</div>
+      </td>
+    </tr>
+  </tbody>
+<br>
+  <button type="button" class="button-back" (click)="goBack()">Back</button>
+</table>

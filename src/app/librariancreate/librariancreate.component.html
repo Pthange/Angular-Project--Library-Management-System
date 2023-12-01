@@ -1,0 +1,39 @@
+<strong class="large-text"><p>Add Librarian</p></strong>
+<div class="col-md-6 offset-md-3">
+
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <strong><label>Name:</label></strong><br>
+      <input type="text" class="form-control" id="name" [(ngModel)]="librarian.libName" name="name">
+    </div><br>
+
+    <div class="form-group">
+      <strong><label>Email:</label></strong><br>
+      <input type="text" class="form-control" id="email" [(ngModel)]="librarian.libEmail" name="email">
+    </div><br>
+
+    <div class="form-group">
+      <strong><label>Username:</label></strong><br>
+      <input type="text" class="form-control" id="username" [(ngModel)]="librarian.libusername" name="username">
+    </div><br>
+
+    <div class="form-group">
+      <strong><label>Password:</label></strong><br>
+      <input type="password" class="form-control" id="password" [(ngModel)]="librarian.libpassword" name="password">
+    </div><br>
+
+    <div class="form-group">
+      <strong><label>Mobile Number:</label></strong><br>
+      <input type="text" class="form-control" id="mobno" [(ngModel)]="librarian.libMobno" name="mobno">
+    </div>
+
+    <div class="form-group">
+      <strong><label>Gender:</label></strong><br>
+      <input type="gender" class="form-control" id="gender" [(ngModel)]="librarian.libGender" name="gender">
+    </div><br>
+    <br>
+    <button class="btn btn-success button-submit" type="submit">Submit</button>
+    <span style="margin-right: 10px;"></span>
+    <button type="button" class="btn btn-danger button-back" (click)="goBack()">Back</button>
+  </form>
+</div>

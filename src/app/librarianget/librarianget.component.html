@@ -1,0 +1,62 @@
+<style>
+    table {
+      margin-top: 20px;
+    }
+  
+    th {
+      padding: 15px; /* Adjust the padding for proper spacing */
+      text-align: left; /* Align text to the left */
+    }
+  
+    td {
+      padding: 10px;
+    }
+  
+    .btn-info,
+    .btn-danger,
+    .button-back {
+      border-radius: 20px;
+      padding: 10px 20px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  </style>
+  
+  <strong class="large-text"><p>Librarian List :</p></strong>
+  
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id:</th>
+        <th>Name:</th>
+        <th>Email:</th>
+        <th>Username:</th>
+        <th>Mobile Number:</th>
+        <th>Gender:</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let librarian of librarians; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ librarian.libName }}</td>
+        <td>{{ librarian.libEmail }}</td>
+        <td>{{ librarian.libusername }}</td>
+        <td>{{ librarian.libMobno }}</td>
+        <td>{{ librarian.libGender }}</td>
+        <td>
+          <button (click)="updateLibrarian(librarian.id)" class="btn btn-info">
+            Update
+          </button>
+        </td>
+        <td>
+          <button (click)="deleteLibrarian(librarian.id)" class="btn btn-danger">
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+    <br>
+    <button type="button" class="button-back" (click)="goBack()">Back</button>
+  </table>
+  

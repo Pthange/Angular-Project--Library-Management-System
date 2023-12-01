@@ -1,0 +1,58 @@
+<style>
+    table {
+      margin-top: 20px;
+    }
+  
+    th {
+      padding: 15px;
+      text-align: left;
+    }
+  
+    td {
+      padding: 10px;
+    }
+  
+    .btn-info,
+    .btn-danger,
+    .button-back {
+      border-radius: 20px;
+      padding: 10px 20px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  </style>
+  
+  <strong class="large-text"><p>Author List :</p></strong>
+  
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id:</th>
+        <th>Author Name:</th>
+        <th>Book Title:</th>
+        <th>Author Gender:</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let author of authors; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ author.authorName }}</td>
+        <td>{{ author.booktitle }}</td>
+        <td>{{ author.authorGender }}</td>
+        <td>
+          <button (click)="updateAuthor(author.id)" class="btn btn-info">Update </button>
+          <!-- <button *ngIf="author.id !== undefined" (click)="updateAuthor(author.id)" class="btn btn-info">Update</button> -->
+
+        </td>
+        <td>
+          <button (click)="deleteAuthor(author.id)" class="btn btn-danger">
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  <br>
+    <button type="button" class="button-back" (click)="goBack()">Back</button>
+  </table>
+  

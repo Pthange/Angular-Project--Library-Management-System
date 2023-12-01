@@ -1,0 +1,60 @@
+<strong class="large-text"><p>Edit Transaction</p></strong>
+<div class="col-md-6 offset-md-3">
+
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <strong><label>Transaction ID:</label></strong><br>
+      <input type="text" class="form-control" id="id" 
+             [(ngModel)]="transaction.id" name="id">
+    </div><br>
+    <div class="form-group">
+      <strong><label>Name:</label></strong><br>
+      <input type="text" class="form-control" id="name" 
+        [(ngModel)]="transaction.name" name="name">
+    </div><br>
+
+    <div class="form-group">
+      <strong><label>Book Title:</label></strong><br>
+      <input type="text" class="form-control" id="booktitle" 
+        [(ngModel)]="transaction.booktitle" name="booktitle">
+    </div><br>
+
+    <div class="form-group">
+      <strong> <label>Borrow Date:</label></strong><br>
+      <input type="text" class="form-control" id="borrowDate" 
+        [(ngModel)]="transaction.borrowDate" name="borrowDate">
+    </div><br>
+
+    <div class="form-group">
+      <strong> <label>Due Date:</label></strong><br>
+      <input type="text" class="form-control" id="dueDate" 
+        [(ngModel)]="transaction.dueDate" name="dueDate">
+    </div><br>
+
+    <div class="form-group">
+      <strong><label>Return Date:</label></strong><br>
+      <input type="text" class="form-control" id="returnDate" 
+        [(ngModel)]="transaction.returnDate" name="returnDate">
+    </div><br>
+
+    <div class="form-group">
+      <strong><label>Total Fine:</label></strong><br>
+      <input type="text" class="form-control" id="totalfine" 
+        [(ngModel)]="transaction.totalfine" name="totalfine">
+    </div>
+
+    <br>
+    <style>
+      .button-submit,
+      .button-back {
+        border-radius: 20px; /* Adjust the value to control the oval shape */
+        padding: 10px 20px; /* Adjust padding for button size */
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    </style>
+    <button class="btn btn-success button-submit" type="submit">Submit</button>
+    <span style="margin-right: 10px;"></span>
+    <button type="button" class="btn btn-danger button-back" (click)="goBack()">Back</button>
+  </form>
+</div>

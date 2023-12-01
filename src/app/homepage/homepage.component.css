@@ -1,0 +1,106 @@
+
+    /* Basic styling for the navigation menu */
+    .lists-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 20px; /* Gap between columns and rows */
+    }
+
+    .list {
+        width: 400px; /* Set your desired width here */
+        margin-bottom: 20px;
+        background-color: #fff; /* Change the background color of individual lists */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    strong {
+        font-size: 18px;
+    }
+
+    /* Styling for the links */
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+        border-bottom: 2px solid transparent;
+    }
+
+    /* Blue color for admin links */
+    .admin-list a {
+        color: #3498db;
+    }
+
+    .admin-list a:hover {
+        color: #e74c3c; /* Red color on hover */
+        border-bottom-color: #e74c3c; /* Red border color on hover */
+    }
+
+    /* Green color for librarian links */
+    .librarian-list a {
+        color: #2ecc71;
+    }
+
+    .librarian-list a:hover {
+        color: #e74c3c; /* Red color on hover */
+        border-bottom-color: #e74c3c; /* Red border color on hover */
+    }
+
+    /* Purple color for book links */
+    .book-list a {
+        color: #9b59b6;
+    }
+
+    .book-list a:hover {
+        color: #e74c3c; /* Red color on hover */
+        border-bottom-color: #e74c3c; /* Red border color on hover */
+    }
+
+    /* Orange color for author links */
+    .author-list a {
+        color: #e67e22;
+    }
+
+    .author-list a:hover {
+        color: #e74c3c; /* Red color on hover */
+        border-bottom-color: #e74c3c; /* Red border color on hover */
+    }
+
+    /* Yellow color for student links */
+    .student-list a {
+        color: #f1c40f;
+    }
+
+    .student-list a:hover {
+        color: #e74c3c; /* Red color on hover */
+        border-bottom-color: #e74c3c; /* Red border color on hover */
+    }
+
+    /* Pink color for transaction links */
+    .transaction-list a {
+        color: #e91e63;
+    }
+
+    .transaction-list a:hover {
+        color: #e74c3c; /* Red color on hover */
+        border-bottom-color: #e74c3c; /* Red border color on hover */
+    }
+
+    /* Additional color styling */
+    .lists-container {
+        background-color: #f0f0f0; /* Change the background color of the entire container */
+        padding: 20px; /* Padding for the entire container */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+

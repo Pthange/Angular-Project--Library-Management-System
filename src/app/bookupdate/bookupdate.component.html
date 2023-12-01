@@ -1,0 +1,53 @@
+<strong class="large-text"><p>Edit Book</p></strong>
+<div class="col-md-6 offset-md-3">
+
+  <form (ngSubmit) = "onSubmit()">
+    <div class="form-group">
+      <strong><label>Book ID:</label></strong><br>
+      <input type="text" class="form-control" id="id" 
+             [(ngModel)]="book.id" name="id">
+    </div><br>
+        <div class="form-group">
+          <strong><label>Title:</label></strong><br>
+        <input type="text" class="form-control" id="name" 
+        [(ngModel)] = "book.title" name="title">
+        </div><br>
+        
+        <div class="form-group">
+        <strong><label>Author:</label></strong><br>
+          <input type="text" class="form-control" id="author" 
+          [(ngModel)] = "book. author" name="author">
+          </div><br>
+        
+          <div class="form-group">
+          <strong> <label>ISBN:</label></strong><br>
+              <input type="text" class="form-control" id="ISBN" 
+              [(ngModel)] = "book.bookISBN" name="ISBN">
+              </div><br>
+        
+              <div class="form-group">
+              <strong> <label>Genre:</label></strong><br>
+                <input type="text" class="form-control" id="genre" 
+                [(ngModel)] = "book. genre" name="genre">
+                </div>
+                <br>
+                <div class="form-group">
+                <strong><label>Language:</label></strong><br>
+                  <input type="text" class="form-control" id="language" 
+                  [(ngModel)] = "book. language" name="language">
+                  </div><br>
+      <br>
+      <style>
+     .btn-success,
+     .button-submit,
+  .button-back {
+    border-radius: 20px; /* Adjust the value to control the oval shape */
+    padding: 10px 20px; /* Adjust padding for button size */
+    margin-right: 10px;
+    cursor: pointer;
+  }
+      </style>
+<button class="btn btn-success" type="submit">Submit</button>      <span style="margin-right: 10px;"></span>
+      <button type="button" class="btn btn-danger button-back" (click)="goBack()">Back</button>
+</form>
+</div>

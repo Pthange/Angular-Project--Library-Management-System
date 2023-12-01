@@ -1,0 +1,21 @@
+.footer {
+    background-color: #353434; /* Set your desired background color */
+    color: #fff; /* Set text color */
+    text-align: center;
+    padding: 08px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 1800px; /* Adjust as needed */
+    margin: 0 auto;
+  }
+  
+  /* Optional: Add some styling to the text */
+  .footer span {
+    font-weight: bold;
+  }
+  
+  

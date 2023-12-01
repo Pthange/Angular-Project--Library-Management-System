@@ -1,0 +1,53 @@
+/* AddAdminFormStyles.css */
+.large-text {
+  font-size: 38px;
+  color: rgb(10, 90, 228);
+}
+
+/* Style for the form container */
+.col-md-6 {
+  background-color: #cfe4fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the form horizontally */
+  max-width: 600px; /* Set a maximum width for the form */
+}
+
+/* Style for form labels */
+label {
+  font-weight: bold;
+}
+
+/* Style for form inputs */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+/* Style for buttons */
+
+.button-submit,
+.button-back {
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Style for the form submit button */
+.btn-success,
+.button-submit {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+}
+
+/* Style for the form back button */
+.button-back {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+}

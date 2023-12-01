@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Your Title</title>
+
+    <style>
+        /* Basic styling for the navigation menu */
+        .lists-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            gap: 20px; /* Gap between columns and rows */
+        }
+
+        .list {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            font-size: 18px;
+        }
+
+        /* Styling for the links */
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        /* Blue color for admin links */
+        .admin-list a {
+            color: #3498db;
+        }
+
+        .admin-list a:hover {
+            color: #e74c3c; /* Red color on hover */
+        }
+
+        /* Green color for librarian links */
+        .librarian-list a {
+            color: #2ecc71;
+        }
+
+        .librarian-list a:hover {
+            color: #e74c3c; /* Red color on hover */
+        }
+
+        /* Purple color for book links */
+        .book-list a {
+            color: #9b59b6;
+        }
+
+        .book-list a:hover {
+            color: #e74c3c; /* Red color on hover */
+        }
+
+        /* Orange color for author links */
+        .author-list a {
+            color: #e67e22;
+        }
+
+        .author-list a:hover {
+            color: #e74c3c; /* Red color on hover */
+        }
+
+        /* Yellow color for student links */
+        .student-list a {
+            color: #f1c40f;
+        }
+
+        .student-list a:hover {
+            color: #e74c3c; /* Red color on hover */
+        }
+
+        /* Pink color for transaction links */
+        .transaction-list a {
+            color: #e91e63;
+        }
+
+        .transaction-list a:hover {
+            color: #e74c3c; /* Red color on hover */
+        }
+
+        /* Additional color styling */
+        .lists-container {
+            background-color: #eecece; /* Change the background color of the entire container */
+            padding: 20px; /* Padding for the entire container */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .list {
+            background-color: #fff; /* Change the background color of individual lists */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Add a border color to the links */
+        a {
+            border-bottom: 2px solid transparent;
+        }
+
+        a:hover {
+            border-bottom-color: #e74c3c; /* Red border color on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="lists-container">
+
+        <div class="list">
+            <ul class="admin-list">
+                <li>
+                    <strong><p>Welcome to Admin-home !!</p></strong>
+                    <ul>
+                        <li><a routerLink="/create-admin">Add Record</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <ul class="librarian-list">
+                <li>
+                    <strong><p>Welcome to Librarian-home !!</p></strong>
+                    <ul>
+                        <li><a routerLink="/create-librarian">Add Record</a></li>
+                        <li><a routerLink="/get-librarian">Get Records</a></li>
+                        <li><a routerLink="/update-librarian/:id">Edit Record</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <ul class="book-list">
+                <li>
+                    <strong><p>Welcome to Book-home !!</p></strong>
+                    <ul>
+                        <li><a routerLink="/create-book">Add Record</a></li>
+                        <li><a routerLink="/get-book">Get Records</a></li>
+                        <li><a routerLink="/update-book/:id">Edit Record</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <ul class="author-list">
+                <li>
+                    <strong><p>Welcome to Author-home !!</p></strong>
+                    <ul>
+                        <li><a routerLink="/create-author">Add Record</a></li>
+                        <li><a routerLink="/get-author">Get Record</a></li>
+                        <li><a routerLink="/update-author/:id">Edit Record</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <ul class="student-list">
+                <li>
+                    <strong><p>Welcome to Student-home !!</p></strong>
+                    <ul>
+                        <li><a routerLink="/create-student">Add Record</a></li>
+                        <li><a routerLink="/get-student">Get Records</a></li>
+                        <li><a routerLink="/update-student/:id">Edit Record</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <ul class="transaction-list">
+                <li>
+                    <strong><p>Welcome to Transaction-home !!</p></strong>
+                    <ul>
+                        <li><a routerLink="/create-transaction">Add Record</a></li>
+                        <li><a routerLink="/get-transaction">Get Records</a></li>
+                        <li><a routerLink="/update-transaction/:id">Edit Record</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+<strong class="large-text"><p>Edit Librarian</p></strong>
+<div class="col-md-6 offset-md-3">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <strong><label>Librarian ID:</label></strong><br>
+      <input type="text" class="form-control" id="id" [(ngModel)]="librarian.id" name="id">
+    </div><br>
+    <div class="form-group">
+      <strong><label>Name:</label></strong><br>
+      <input type="text" class="form-control" id="name" [(ngModel)]="librarian.libName" name="name">
+    </div><br>
+   
+    <div class="form-group">
+      <strong><label>Email:</label></strong><br>
+      <input type="text" class="form-control" id="email" [(ngModel)]="librarian.libEmail" name="libEmail">
+    </div><br>
+    <div class="form-group">
+      <strong><label>Username:</label></strong><br>
+      <input type="text" class="form-control" id="username" [(ngModel)]="librarian.libusername" name="username">
+    </div><br>
+
+    <div class="form-group">
+      <strong><label>Password:</label></strong><br>
+      <input type="password" class="form-control" id="password" [(ngModel)]="librarian.libpassword" name="password">
+    </div><br>
+    <div class="form-group">
+      <strong><label>Mobile Number:</label></strong><br>
+      <input type="text" class="form-control" id="mobno" [(ngModel)]="librarian.libMobno" name="libMobno">
+    </div><br>
+    <div class="form-group">
+      <strong><label>Gender:</label></strong><br>
+      <input type="text" class="form-control" id="gender" [(ngModel)]="librarian.libGender" name="libGender">
+    </div><br>
+    
+    
+  
+    <style>
+      .btn-success,
+      .button-back {
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    </style>
+    <button class="btn btn-success" type="submit">Submit</button>
+    <span style="margin-right: 10px;"></span>
+    <button type="button" class="btn btn-danger button-back" (click)="goBack()">Back</button>
+  </form>
+</div>

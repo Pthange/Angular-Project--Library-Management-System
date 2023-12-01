@@ -1,0 +1,66 @@
+
+table {
+  margin-top: 20px;
+  width: 80%; /* Adjust the width as needed */
+  border-collapse: collapse;
+  margin-bottom: 20px; /* Add margin for better spacing */
+}
+
+th, td {
+  padding: 10px; /* Adjust the padding for smaller cells */
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  min-width: 120px; /* Set a minimum width for th elements */
+  background-color: #f2f2f2;
+}
+
+.btn-info,
+.btn-danger,
+.button-back {
+  border-radius: 20px;
+  padding: 8px 16px; /* Adjust padding for smaller buttons */
+  margin-right: 10px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px; /* Adjust font size for smaller buttons */
+  transition-duration: 0.4s;
+}
+
+.btn-info {
+  background-color: #4CAF50; /* Green */
+  border: 1px solid #4CAF50;
+}
+
+.btn-info:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-danger {
+  background-color: #f44336; /* Red */
+  border: 1px solid #f44336;
+}
+
+.btn-danger:hover {
+  background-color: white;
+  color: black;
+}
+
+.button-back {
+  background-color: #f35798; /* Blue */
+  border: 1px solid #008CBA;
+}
+
+.large-text {
+  font-size: 38px;
+  color: rgb(10, 90, 228);
+  margin-bottom: 10px;
+}
+

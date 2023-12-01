@@ -1,0 +1,65 @@
+<strong class="large-text"><p>Edit Student</p></strong>
+<div class="col-md-6 offset-md-3">
+
+  <form (ngSubmit) = "onSubmit()">
+    <div class="form-group">
+      <strong><label>Student ID:</label></strong><br>
+        <input type="text" class="form-control" id="address" 
+        [(ngModel)] = "student. id" name="id">
+        </div><br>
+        <div class="form-group">
+          <strong><label>Name:</label></strong><br>
+        <input type="text" class="form-control" id="name" 
+        [(ngModel)] = "student. studName" name="name">
+        </div><br>
+        
+        <div class="form-group">
+        <strong><label>Address:</label></strong><br>
+          <input type="text" class="form-control" id="address" 
+          [(ngModel)] = "student. studAddress" name="address">
+          </div><br>
+        
+          <div class="form-group">
+          <strong> <label>Email:</label></strong><br>
+              <input type="text" class="form-control" id="email" 
+              [(ngModel)] = "student. studEmail" name="studEmail">
+              </div><br>
+        
+              <div class="form-group">
+              <strong> <label>Date Of Birth:</label></strong><br>
+                <input type="text" class="form-control" id="studDOB" 
+                [(ngModel)] = "student. studDOB" name="studDOB">
+                </div><br>
+        
+                <div class="form-group">
+                <strong><label>Gender:</label></strong><br>
+                  <input type="text" class="form-control" id="email" 
+                  [(ngModel)] = "student. studGender" name="studGender">
+                  </div><br>
+        
+                  <div class="form-group">
+                  <strong><label>Department:</label></strong><br>
+                    <input type="text" class="form-control" id="email" 
+                    [(ngModel)] = "student.studDepartment" name="studDepartment">
+                    </div><br>
+        
+                    <div class="form-group">
+                    <strong><label>Mobile Number:</label></strong><br>
+                      <input type="text" class="form-control" id="email" 
+                      [(ngModel)] = "student. studMobno" name="studMobno">
+                      </div>
+      <br>
+      <style>
+        .btn-success,
+  .button-back {
+    border-radius: 20px; /* Adjust the value to control the oval shape */
+    padding: 10px 20px; /* Adjust padding for button size */
+    margin-right: 10px;
+    cursor: pointer;
+  }
+      </style>
+      <button class="btn btn-success" type="submit">Submit</button>
+<span style="margin-right: 10px;"></span>
+      <button type="button" class="btn btn-danger button-back" (click)="goBack()">Back</button>
+</form>
+</div>
