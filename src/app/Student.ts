@@ -7,6 +7,8 @@ export class Student {
     studGender!:String;
     studDepartment!:String;
     studMobno!:String;
+    username!:String;
+    password!:String;
 
 
   
